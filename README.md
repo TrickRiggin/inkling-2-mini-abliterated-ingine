@@ -13,6 +13,8 @@ The installer sets everything up and downloads the ready-to-run model from Huggi
 
 ## Run
 
+> **Windows 11 + RTX 5090 (WSL2):** Run [`setup-windows.ps1`](setup-windows.ps1) from PowerShell to install `ingine` into WSL2 and add a native Windows `ingine` command (`ingine start|stop|status|logs|update`) with `http://127.0.0.1:8003/v1` accessible directly from Windows apps. See [**WINDOWS.md**](WINDOWS.md) for prerequisites (WSL `2.7.0+`, driver `580+`), measured WSL2 benchmarks, and VRAM tips.
+
 You need **Linux x86_64, an NVIDIA GPU with compute capability 12.0 and at least 32 GB of memory (RTX 5090), an
 NVIDIA driver for CUDA 13 (580 or newer), a C++20 compiler (GCC 12 to 16; the menu offers to install one), and
 about 24 GB of free disk** (20.2 GB of model files; the private CUDA toolkit, the build tools and the build take
